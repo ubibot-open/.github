@@ -6,9 +6,9 @@
 
 # UbiBot Open Source
 
-**Open IoT, Open Future**
+**UbiBot Open Source**
 
-*A lightweight IoT platform built for everyone*
+*Production-grade IoT devices with open-source firmware for developers and system integrators.*
 
 [![Website](https://img.shields.io/badge/🌐-Commercial%20Version-2563EB?style=for-the-badge)](https://www.ubibot.com)
 [![Docs](https://img.shields.io/badge/📖-Documentation-10B981?style=for-the-badge)](https://github.com/ubibot-open/ubibot-docs)
