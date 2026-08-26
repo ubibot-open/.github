@@ -2,7 +2,7 @@
 
 <!-- ===== Hero Banner ===== -->
 <!-- Replace with your actual banner image. Recommended size: 1280×400 -->
-![UbiBot Open Source](./assets/banner.png)
+![UbiBot Open Source]([./assets/banner.png](https://raw.githubusercontent.com/ubibot-open/.github/main/assets/banner.png))
 
 # UbiBot Open Source
 
