@@ -8,7 +8,7 @@
 *Open-source IoT device platform, firmware, and tooling for developers, makers, and researchers.*
 
 [![Website](https://img.shields.io/badge/🌐-Commercial%20Version-2563EB?style=for-the-badge)](https://www.ubibot.com)
-[![Docs](https://img.shields.io/badge/📖-Documentation-10B981?style=for-the-badge)](https://github.com/ubibot-open/ubibot-docs)
+[![Docs](https://img.shields.io/badge/📖-Documentation-10B981?style=for-the-badge)](https://github.com/ubibot-open/ubibot-open-doc)
 [![Discord](https://img.shields.io/badge/💬-Community-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/ubibot)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange?style=for-the-badge)](./LICENSE)
 
@@ -31,7 +31,7 @@
 
 | Capability | Description | Difference from Commercial Edition |
 |:---|:---|:---|
-| 📡 **Basic Device Access** | HTTP-based device auth (device triplet + HMAC signing), data reporting, and command dispatch | Does not include MQTT / LoRaWAN / Modbus / NB-IoT or other enterprise protocols |
+| 📡 **Basic Device Access** | Plain-text pid+sn device identity over HTTP (no signing/keys), data reporting, and serial-based provisioning — see the [protocol reference](https://github.com/ubibot-open/ubibot-open-doc) | Does not include MQTT / LoRaWAN / Modbus / NB-IoT, device auth signing, or a server-to-device command-dispatch channel |
 | 📊 **Lightweight Data Management** | Sensor data collection and storage on embedded SQLite | Does not include multi-dimensional analytics or advanced alerting modules |
 | 🔌 **Self-Contained Deployment** | Single Go binary with the admin UI embedded — no separate frontend server or database service to run | Does not include cluster HA or auto-scaling |
 | 🔧 **Companion Tooling** | Open-source firmware and a desktop serial debugging tool for bringing up and testing devices | Not part of the commercial edition's scope |
@@ -53,13 +53,13 @@
 
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
-| [ubibot-open-server](https://github.com/ubibot-open/ubibot-open-server) | IoT backend (Go) — device identity/auth, data ingestion, command dispatch, SQLite storage — plus a React/Ant Design admin console, built into a single self-contained binary | TBD | 🟢 Active |
+| [ubibot-open-server](https://github.com/ubibot-open/ubibot-open-server) | IoT backend (Go) — device identity, data ingestion, SQLite storage — plus a React/Ant Design admin console, built into a single self-contained binary | TBD | 🟢 Active |
 
 ### 📡 Device & Firmware
 
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
-| [ubibot-ws1b](https://github.com/ubibot-open/ubibot-open-ws1b) | Open-source ESP-IDF firmware for the UbiBot WS1B device | MIT | 🟢 Active |
+| [ubibot-ws1b](https://github.com/ubibot-open/ubibot-open-ws1b) | Open-source ESP-IDF firmware for the UbiBot WS1B device, with runtime WiFi/server provisioning over serial | MIT | 🟢 Active |
 
 ### 🔌 Tools
 
@@ -71,7 +71,7 @@
 
 | Project | Description | Status |
 |:---|:---|:---:|
-| ubibot-open-doc | Deployment guides and device communication protocol reference | 🚧 Planned |
+| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Hardware communication protocol reference and the system deployment/flashing/bring-up guide | 🟢 Active |
 
 ---
 
@@ -91,6 +91,10 @@ cd ubibot-open-server
 ./ubibot-server
 # open http://localhost:8080
 ```
+
+This covers the backend only. To also flash the WS1B reference firmware, connect it over serial,
+and verify the full device → backend → dashboard pipeline, see the
+[system deployment, flashing & bring-up guide](https://github.com/ubibot-open/ubibot-open-doc/blob/main/guides/deployment-flashing-guide.md).
 
 ---
 
