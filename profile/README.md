@@ -79,8 +79,8 @@
 
 ```bash
 # 1. Clone the core platform repository
-git clone https://github.com/ubibot-open/ubibot-platform-open.git
-cd ubibot-platform-open
+git clone https://github.com/ubibot-open/ubibot-open-server.git
+cd ubibot-open-server
 
 # 2. Build the admin frontend and the server binary
 #    Requires: Node.js/npm (frontend) and Go 1.23+ (server)
