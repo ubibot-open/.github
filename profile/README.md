@@ -10,7 +10,6 @@
 [![Website](https://img.shields.io/badge/🌐-Commercial%20Version-2563EB?style=for-the-badge)](https://www.ubibot.com)
 [![Docs](https://img.shields.io/badge/📖-Documentation-10B981?style=for-the-badge)](https://github.com/ubibot-open/ubibot-open-doc)
 [![Discord](https://img.shields.io/badge/💬-Community-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/ubibot)
-[![License](https://img.shields.io/badge/License-Apache%202.0-orange?style=for-the-badge)](./LICENSE)
 
 </div>
 
@@ -53,7 +52,7 @@
 
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
-| [ubibot-open-server](https://github.com/ubibot-open/ubibot-open-server) | IoT backend (Go) — device identity, data ingestion, SQLite storage — plus a React/Ant Design admin console, built into a single self-contained binary | TBD | 🟢 Active |
+| [ubibot-open-server](https://github.com/ubibot-open/ubibot-open-server) | IoT backend (Go) — device identity, data ingestion, SQLite storage — plus a React/Ant Design admin console, built into a single self-contained binary | Apache 2.0 | 🟢 Active |
 
 ### 📡 Device & Firmware
 
@@ -69,9 +68,9 @@
 
 ### 📚 Docs & Learning
 
-| Project | Description | Status |
-|:---|:---|:---:|
-| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Hardware communication protocol reference and the system deployment/flashing/bring-up guide | 🟢 Active |
+| Project | Description | License | Status |
+|:---|:---|:---:|:---:|
+| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Hardware communication protocol reference and the system deployment/flashing/bring-up guide | Apache 2.0 | 🟢 Active |
 
 ---
 
@@ -104,4 +103,7 @@ Each repository carries its own license — see the table above and the `LICENSE
 
 ## 💬 Contributing
 
-Issues and pull requests are welcome on each project's own repository.
+Issues and pull requests are welcome on each project's own repository. See this org's
+[CONTRIBUTING.md](https://github.com/ubibot-open/.github/blob/main/CONTRIBUTING.md) for the
+general workflow (it applies as the default for every repo here that doesn't have its own), and
+our [Code of Conduct](https://github.com/ubibot-open/.github/blob/main/CODE_OF_CONDUCT.md).
