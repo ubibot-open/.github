@@ -33,7 +33,7 @@
 | 📡 **Basic Device Access** | Plain-text pid+sn device identity over HTTP (no signing/keys), data reporting, serial-based provisioning, and a minimal admin-triggered command channel (reboot / change report interval) — see the [protocol reference](https://github.com/ubibot-open/ubibot-open-doc) | Does not include MQTT / LoRaWAN / Modbus / NB-IoT, device auth signing, OTA, or a general server-to-device push/config channel |
 | 📊 **Lightweight Data Management** | Sensor data collection and storage on embedded SQLite | Does not include multi-dimensional analytics or advanced alerting modules |
 | 🔌 **Self-Contained Deployment** | Single Go binary with the admin UI embedded — no separate frontend server or database service to run | Does not include cluster HA or auto-scaling |
-| 🔧 **Companion Tooling** | Open-source firmware and a desktop serial debugging tool for bringing up and testing devices | Not part of the commercial edition's scope |
+| 🔧 **Companion Tooling** | Open-source firmware, a desktop serial debugging tool, and a hardware-free device simulator for bringing up and testing devices | Not part of the commercial edition's scope |
 
 ### 👥 Who Is This For?
 
@@ -65,6 +65,7 @@
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
 | [ubibot-serial-sync](https://github.com/ubibot-open/ubibot-serial-sync) | Cross-platform (Windows/macOS/Linux) Qt 6 desktop serial debugging tool for UbiBot devices (WS1, WS1 Pro, GS1-AL4G1RS, SP1, …) — device command library, data monitor, cloud-synced command sets | LGPLv3 | 🟢 Active |
+| [ubibot-open-simulator](https://github.com/ubibot-open/ubibot-open-simulator) | Pure-C, host-buildable device simulator speaking the exact same protocol as the WS1B firmware — test the backend and admin console with no hardware on hand | Apache 2.0 | 🟢 Active |
 
 ### 📚 Docs & Learning
 
