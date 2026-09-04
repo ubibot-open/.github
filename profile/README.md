@@ -58,7 +58,7 @@
 
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
-| [ubibot-ws1b](https://github.com/ubibot-open/ubibot-open-ws1b) | Open-source ESP-IDF firmware for the UbiBot WS1B device, with runtime WiFi/server provisioning over serial | MIT | 🟢 Active |
+| [ubibot-ws1b](https://github.com/ubibot-open/ubibot-open-ws1b) | Open-source ESP-IDF firmware for the UbiBot WS1B device, with runtime WiFi/server/serial-number provisioning over serial — flash one build per production batch, set each unit's identity afterward | MIT | 🟢 Active |
 
 ### 🔌 Tools
 
@@ -70,7 +70,7 @@
 
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
-| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Hardware communication protocol reference and the system deployment/flashing/bring-up guide | Apache 2.0 | 🟢 Active |
+| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Architecture overview, hardware communication protocol reference, deployment/flashing/bring-up guide, and admin/open API references | Apache 2.0 | 🟢 Active |
 
 ---
 
