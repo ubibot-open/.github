@@ -11,7 +11,8 @@ one later) takes precedence over this one.
 | [ubibot-open-server](https://github.com/ubibot-open/ubibot-open-server) | Device-facing backend + admin console | Go, React/TypeScript |
 | [ubibot-open-ws1b](https://github.com/ubibot-open/ubibot-open-ws1b) | WS1B reference firmware | C, ESP-IDF |
 | [ubibot-serial-sync](https://github.com/ubibot-open/ubibot-serial-sync) | Desktop serial debugging/provisioning tool | C++, Qt 6/QML |
-| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Protocol spec and deployment/bring-up guide | Markdown |
+| [ubibot-open-simulator](https://github.com/ubibot-open/ubibot-open-simulator) | Host-buildable device simulator, no hardware needed | C |
+| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Protocol spec, deployment guide, user manual, developer handbook | Markdown |
 
 Each repo's own `README.md` (and `BUILD.md`, where present) has the build/run instructions —
 start there before opening a PR so your change actually builds locally first.
@@ -49,6 +50,7 @@ include:
    - `ubibot-open-ws1b`: `idf.py build` (with ESP-IDF v6.0.2, target `esp32c5` — see the repo's
      README for setup).
    - `ubibot-serial-sync`: see the repo's `BUILD.md`.
+   - `ubibot-open-simulator`: `cmake -S . -B build && cmake --build build && ctest --test-dir build`.
 4. Keep the PR focused — one logical change per PR is much easier to review than a bundle of
    unrelated fixes.
 5. Write a clear PR description: what changed and why, and how you tested it. Link the issue it
@@ -70,13 +72,16 @@ idiom should stay consistent within the file you're touching. A few stack-specif
   libc primitives directly where a wrapper already exists.
 - **C++/Qt** (`ubibot-serial-sync`): see that repo's `BUILD.md` for its design notes and module
   layout before adding a new panel/feature.
+- **C/CMake** (`ubibot-open-simulator`): match the existing layering (`core/`/`transport/`/`app/`,
+  see that repo's README) — most of it is meant to double as portable FreeRTOS-ready code, so
+  keep host-only code confined to the files already marked as such.
 
 ## Licensing of your contribution
 
 By submitting a contribution, you agree it's licensed under the same license as the repository
 you're contributing to (see that repo's `LICENSE` file — currently Apache 2.0 for
-`ubibot-open-server` and `ubibot-open-doc`, MIT for `ubibot-open-ws1b`, and LGPLv3 for
-`ubibot-serial-sync`). No separate CLA is required.
+`ubibot-open-server`, `ubibot-open-doc`, and `ubibot-open-simulator`, MIT for `ubibot-open-ws1b`,
+and LGPLv3 for `ubibot-serial-sync`). No separate CLA is required.
 
 ## Getting help
 

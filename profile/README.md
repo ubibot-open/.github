@@ -71,7 +71,7 @@
 
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
-| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Architecture overview, hardware communication protocol reference, deployment/flashing/bring-up guide, and admin/open API references | Apache 2.0 | 🟢 Active |
+| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Architecture overview, hardware communication protocol reference, deployment/flashing/bring-up guide, user manual & developer handbook (English + 中文), and admin/open API references | Apache 2.0 | 🟢 Active |
 
 ---
 
