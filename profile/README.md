@@ -11,6 +11,8 @@
 [![Docs](https://img.shields.io/badge/📖-Documentation-10B981?style=for-the-badge)](https://github.com/ubibot-open/ubibot-open-doc)
 [![Discord](https://img.shields.io/badge/💬-Community-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/ubibot)
 
+*[中文](README.zh-CN.md)*
+
 </div>
 
 ---
