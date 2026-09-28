@@ -11,8 +11,6 @@
 [![Docs](https://img.shields.io/badge/📖-Documentation-10B981?style=for-the-badge)](https://github.com/ubibot-open/ubibot-open-doc)
 [![Discord](https://img.shields.io/badge/💬-Community-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/ubibot)
 
-*[中文](README.zh-CN.md)*
-
 </div>
 
 ---
@@ -73,7 +71,7 @@
 
 | Project | Description | License | Status |
 |:---|:---|:---:|:---:|
-| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Architecture overview, hardware communication protocol reference, deployment/flashing/bring-up guide, user manual & developer handbook (English + 中文), and admin/open API references | Apache 2.0 | 🟢 Active |
+| [ubibot-open-doc](https://github.com/ubibot-open/ubibot-open-doc) | Architecture overview, hardware communication protocol reference, deployment/flashing/bring-up guide, user manual & developer handbook, and admin/open API references | Apache 2.0 | 🟢 Active |
 
 ---
 
